@@ -47,7 +47,7 @@ object FamilyTree {
       else Member(m, replace(mother, repTree, newTree), replace(father, repTree, newTree))
   }
   
-  def avg[A](tree: FamilyTree[A])(implicit frac: Fractional[A]) = {
+  def avg[A : Fractional](tree: FamilyTree[A]) = {
     val total = fold(tree)(List[A]()) { 
       (a, b, c) => List(a) ++ b ++ c 
     }

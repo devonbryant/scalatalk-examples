@@ -1,4 +1,4 @@
 scalatalk-examples
 ==================
 
-Examples from a Scala Tech-Talk at ISS
+Accompanying examples for http://devonbryant.github.io/scalatalk/

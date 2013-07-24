@@ -12,4 +12,9 @@ object ExampleFunctions {
     else as.head :: concat(as.tail, bs)
   }
   
+  val fullName = (a: Person) => a.first + " " + a.surname
+  val lowercase = (a: String) => a.toLowerCase()
+  
+  // An example of composition
+  val fullNameLower = fullName andThen lowercase
 }
